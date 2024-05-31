@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "{{ url_for('static', filename='style.css') }}"/>
+    <title>Login</title>
+</head>
+<body>
+    <div class="login">
+        <div class="loginWrapper">
+          <div class="loginLeft">
+            <h3 class="loginLogo">Login</h3>
+            
+          </div>
+          <div class="loginRight">
+            <form class="loginBox">
+              <input
+                placeholder="Email"
+                required
+                type="email"
+                class="loginInput"
+                ref={email}
+                autoComplete="email"
+              />
+              <input
+                placeholder="Password"
+                required
+                minLength={4}
+                type="password"
+                class="loginInput"
+                ref={password}
+                autoComplete="current-password"
+              />
+              <button class="loginButton" >
+                    Log in
+              </button>
+              <span class="loginForgot">Forgot Password</span>
+              <button class="loginRegisterButton">
+                Create new Account"
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

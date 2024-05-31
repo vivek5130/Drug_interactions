@@ -1,0 +1,295 @@
+body{
+  margin: 0px;
+  padding:0px;
+}
+.container{
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+}
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  }
+
+
+  .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .navbar {
+    width: 100%;
+    /* background-color: #555; */
+    background: transparent;
+    overflow: auto;
+    position: fixed;
+    z-index: 20;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #04AA6D;
+  }
+  
+#recommendForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  font-size: 20px;
+}
+#recommendForm input{
+  /* background-color: #04AA6D; */
+  display: block;
+  width: 400px;
+  height: 40px;
+  padding:5px
+}
+#recommendForm label{
+  /* background-color: #000; */
+  display: block;
+  width: 400px;
+  height: 30px;
+  padding:5px
+}
+#recommendForm button{
+  width: 200px;
+  height: 40px;
+  background-color: #04AA6D;
+  color: #f1f1f1;
+  border: none;
+  font-size: 20px;
+  margin-top: 10px;
+}
+#cropToGrow{
+  text-align: center;
+  font-size: 24px;
+  color: crimson;
+  background-color: aquamarine;
+  /* height: 40px; */
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* other */
+#cropImg{
+  max-width: 500px;
+  max-height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#cropRecContainer{
+  /* display: flex; */
+  align-items: center;
+  width: 100%;
+  
+}
+/* login */
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginWrapper {
+  width: 70%;
+  height: 70%;
+  display: flex;
+}
+
+.loginLeft,
+.loginRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginLogo {
+  font-size: 50px;
+  font-weight: 800;
+  color: #1775ee;
+  margin-bottom: 10px;
+}
+
+.loginDesc {
+  font-size: 24px;
+}
+
+.loginBox{
+    height: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.loginInput{
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.loginInput:focus{
+    outline: none;
+}
+
+.loginButton{
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1775ee;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.loginButton:focus{
+  outline: none;
+}
+.loginButton:disabled{
+  cursor: not-allowed
+}
+.loginForgot{
+    text-align: center;
+    color: #1775ee;
+}
+
+.loginRegisterButton{
+    width: 60%;
+    align-self: center;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #42b72a;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* weather */
+.weatherContainer{
+  border-radius: 12px;
+  background-image: linear-gradient(180deg,#130754 0%, #3b2f80 100%);
+  margin-left:auto;
+  margin-right:auto;
+  height:500px;
+  /* width: 100%; */
+  margin-top: 12px;
+  max-width:600px ;
+  /* display: flex; */
+}
+.weatherTopbar{
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  max-width:600px ;
+}
+.weatherImage{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.weatherTemp{
+  display: flex;
+  justify-content: center;
+  color:white;
+  font-size: 50px;
+  font-weight: 400;
+}
+.weatherLocation{
+  display: flex;
+  justify-content: center;
+  color:white;
+  font-size: 30px;
+  font-weight: 400;
+
+}
+.dataContainer{
+  margin-top: 50px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text{
+  font-size: 16px;
+  font-weight: 400;
+  /* margin-top: 5px; */
+}
+.humidityPercentage{
+  font-size: 16px;
+}
+.windSpeedPercentage{
+  font-size :16px
+}
+.element{
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+}
+.data{
+  font-size: 28px;
+  font-weight: 400;
+}
+.icon{
+  margin-top: 10px;
+}
+

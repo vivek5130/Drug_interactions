@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <script>
+    
+    </script>
+  </head>
+  <body>
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="/"><i class="fa fa-fw fa-search"></i> About us</a>
+        <a href="/"><i class="fa fa-fw fa-envelope"></i> Contact us</a>
+        <a href="/"><i class="fa fa-fw fa-user"></i> Login</a>
+      </div>
+    <div class="container">
+      <video autoplay muted loop id="myVideo">
+        <source
+          src="{{ url_for('static', filename='backgroundVideo.mp4') }}"
+          type="video/mp4"
+        />
+      </video>
+      <!-- Optional: some overlay text to describe the video -->
+      <div class="content">
+        <h1>Drug Safety</h1>
+        <p>A step towards the future</p>
+        <p>Let's be one step ahead in our health</p>
+      </div>
+    </div>
+ 
+    <div>
+    
+    <form id="recommendForm" action="/identify" method="post">
+      <h2>Enter the names of drug</h2>
+      <label for="drug1">Drug 1</label>
+      <input name="drug1" id="drug1" type="text" required/>
+      <label for="drug2">Drug 2</label>
+      <input name="drug2" id="drug2" type="text" required/>
+     
+      <button>submit</button>
+    </form>
+    {% if crop %}
+
+    <div id = "cropRecContainer">
+      
+    <div id="cropToGrow">
+      <h2>Crop to be Grown</h2>
+      <p>{{crop}}</p>
+      <div><img id = "cropImg" src="{{ url_for('static', filename='cropImages/' + crop + '.jpg') }}" alt= "{{crop}} image"/></div>
+    </div>
+    
+
+    <!-- weather -->
+    <div class="weatherContainer">
+      <div class="weatherTopbar">
+        <div class="weatherImage">
+          <img src= "{{ url_for('static', filename='weatherImages/cloud.png') }}"  alt="" />
+        </div>
+        <div class="weatherTemp">{{temperature}} °c</div>
+        <div class="weatherLocation"> Hyderabad </div>
+        <div class="dataContainer">
+          <div class="element">
+            <img class="icon" src= "{{ url_for('static', filename='weatherImages/humidity.png') }}" alt="" />
+            <div class="data">
+              <div class="humidityPercentage">
+                {{humidity}}%
+              </div>
+              <div class="text">Humidity</div>
+            </div>
+          </div>
+          <div class="element">
+            <img class="icon" src= "{{ url_for('static', filename='weatherImages/wind.png') }}" alt="" />
+            <div class="data">
+              <div class="windSpeedPercentage">
+                {{windSpeed}}km/hr
+              </div>
+              <div class="text">Wind Speed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    {% elif crop == 'error' %}
+    <div id="croptToGrow">Something went wront</div>
+
+    {% endif %}
+
+</div>
+
+  </body>
+</html>

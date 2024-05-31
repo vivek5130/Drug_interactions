@@ -1,0 +1,18 @@
+installing jinja2 for executing variables in html
+
+
+{"location":{"name":"Boston","region":"Lincolnshire","country":"United Kingdom","lat":53.1,"lon":-0.13,"tz_id":"Europe/London","localtime_epoch":1714153699,"localtime":"2024-04-26 18:48"},"current":{"last_updated_epoch":1714153500,"last_updated":"2024-04-26 18:45","temp_c":8.0,"temp_f":46.4,"is_day":1,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":3.8,"wind_kph":6.1,"wind_degree":340,"wind_dir":"NNW","pressure_mb":1005.0,"pressure_in":29.68,"precip_mm":0.0,"precip_in":0.0,"humidity":81,"cloud":75,"feelslike_c":5.1,"feelslike_f":41.1,"vis_km":10.0,"vis_miles":6.0,"uv":2.0,"gust_mph":16.3,"gust_kph":26.2}}
+b'{"location":{"name":"Boston","region":"Lincolnshire","country":"United Kingdom","lat":53.1,"lon":-0.13,"tz_id":"Europe/London","localtime_epoch":1714153699,"localtime":"2024-04-26 18:48"},"current":{"last_updated_epoch":1714153500,"last_updated":"2024-04-26 18:45","temp_c":8.0,"temp_f":46.4,"is_day":1,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":3.8,"wind_kph":6.1,"wind_degree":340,"wind_dir":"NNW","pressure_mb":1005.0,"pressure_in":29.68,"precip_mm":0.0,"precip_in":0.0,"humidity":81,"cloud":75,"feelslike_c":5.1,"feelslike_f":41.1,"vis_km":10.0,"vis_miles":6.0,"uv":2.0,"gust_mph":16.3,"gust_kph":26.2}}'
+
+Nitrogen (N):
+Sandy soils typically have lower nitrogen levels because nitrogen is highly soluble and can easily leach below the root zone in sandy soils.
+Clay soils tend to have higher nitrogen levels because they have higher organic matter content, which contributes to nitrogen retention.
+Loamy soils often have moderate nitrogen levels and can retain nitrogen better than sandy soils but may not have as high nitrogen levels as clay soils.
+Phosphorus (P):
+Clay soils usually have higher phosphorus levels because clay particles have a greater surface area to adsorb phosphorus ions.
+Sandy soils may have lower phosphorus levels because phosphorus is less likely to be retained and may leach out of the soil.
+Loamy soils generally have moderate phosphorus levels and can retain phosphorus better than sandy soils but may not have as high phosphorus levels as clay soils.
+Potassium (K):
+Clay soils often have higher potassium levels because potassium is held tightly by clay particles and is less prone to leaching.
+Sandy soils may have lower potassium levels because potassium is more susceptible to leaching in sandy soils.
+Loamy soils usually have moderate potassium levels and can retain potassium better than sandy soils but may not have as high potassium levels as clay soils.
